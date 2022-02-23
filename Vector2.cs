@@ -47,11 +47,6 @@ namespace VectorsProject
         public static bool operator ==(Vector2 v1, Vector2 v2) => v1._x == v2._x && v1._y == v2._y;
         public static bool operator !=(Vector2 v1, Vector2 v2) => !(v1._x == v2._x && v1._y == v2._y);
 
-        public static implicit operator Vector2(float f)
-        {
-            return new Vector2(f);
-        }
-
         public static implicit operator Vector2(Vector3 v)
         {
             return new Vector2(v.X, v.Y);
